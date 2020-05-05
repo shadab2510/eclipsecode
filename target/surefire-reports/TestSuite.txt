@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 62.375 s <<< FAILURE! - in TestSuite
+JavaCodes.OneTest.JavaSixTest  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.Error: 
+Unresolved compilation problem: 
+	ou cannot be resolved or is not a field
+
+	at JavaCodes.OneTest.JavaSixTest(OneTest.java:18)
+
