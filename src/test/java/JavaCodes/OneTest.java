@@ -11,12 +11,15 @@ public class OneTest {
 		System.out.println("JavaOneTest");
 		System.out.println("JavaOneTest");
 		System.out.println("JavaOneTest");
+		
 	}
 
 	
 	@Test
 	public void JavaSixTest()
 	{
+		System.out.println("JavaSixTest");
+		System.out.println("JavaSixTest");
 		System.out.println("JavaSixTest");
 	}
 	
@@ -30,6 +33,8 @@ public class OneTest {
 	public void JavaThreeTest()
 	{
 		System.out.println("JavaThreeTest");
+		System.out.println("JavaThreeTest");
+		
 	}
 	
 	@Test
