@@ -8,6 +8,8 @@ public class TwoTest {
 	
 	{
 		System.out.println("NewJavatestOne");
+		System.out.println("NewJavatestOneone");
+		
 	}
 
 	
