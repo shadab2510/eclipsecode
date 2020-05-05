@@ -9,8 +9,7 @@ public class OneTest {
 	public void JavaOneTest()
 	{
 		System.out.println("JavaOneTest");
-		System.out.println("JavaOneTest");
-		System.out.println("JavaOneTest");
+		
 		
 	}
 
