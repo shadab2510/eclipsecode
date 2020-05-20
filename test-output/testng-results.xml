@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-05T23:16:14 IST" name="Default suite" finished-at="2020-05-05T23:16:14 IST" duration-ms="81">
+  <suite started-at="2020-05-21T00:00:08 IST" name="Default suite" finished-at="2020-05-21T00:00:35 IST" duration-ms="26906">
     <groups>
     </groups>
-    <test started-at="2020-05-05T23:16:14 IST" name="Default test" finished-at="2020-05-05T23:16:14 IST" duration-ms="81">
-      <class name="JavaCodes.OneTest">
-        <test-method is-config="true" signature="JavaThreeTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaThreeTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="13" status="PASS">
+    <test started-at="2020-05-21T00:00:08 IST" name="Default test" finished-at="2020-05-21T00:00:35 IST" duration-ms="26906">
+      <class name="mavenJava.TravellerTest">
+        <test-method signature="TravellerTest()[pri:0, instance:mavenJava.TravellerTest@672872e1]" started-at="2020-05-21T00:00:08 IST" name="TravellerTest" finished-at="2020-05-21T00:00:35 IST" duration-ms="26853" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JavaThreeTest -->
-        <test-method signature="JavaFourTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaFourTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="6" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JavaFourTest -->
-        <test-method signature="JavaOneTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaOneTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JavaOneTest -->
-        <test-method signature="JavaSixTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaSixTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JavaSixTest -->
-        <test-method signature="JavaTwoTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaTwoTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JavaTwoTest -->
-        <test-method is-config="true" signature="JavaFiveTest()[pri:0, instance:JavaCodes.OneTest@2928854b]" started-at="2020-05-05T23:16:14 IST" name="JavaFiveTest" finished-at="2020-05-05T23:16:14 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- JavaFiveTest -->
-      </class> <!-- JavaCodes.OneTest -->
+        </test-method> <!-- TravellerTest -->
+      </class> <!-- mavenJava.TravellerTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

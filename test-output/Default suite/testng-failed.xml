@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="mavenJava.NegativeTest">
+      <class name="mavenJava.PositiveTest">
         <methods>
-          <include name="negativetest"/>
+          <include name="TestNg"/>
         </methods>
-      </class> <!-- mavenJava.NegativeTest -->
+      </class> <!-- mavenJava.PositiveTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

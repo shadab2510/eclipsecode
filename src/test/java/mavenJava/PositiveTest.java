@@ -18,10 +18,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.appium.java_client.remote.MobileCapabilityType;
+
 public class PositiveTest {
 	@Test
 	public void TestNg() throws InterruptedException 
 	{//System.out.println("Positive");
+		
+		
+		
 		
 		  System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
 		  
@@ -74,86 +79,85 @@ driver.quit();
 
 
 	
-                         @Test
-                        public void ItmLinkTest()
-                      {System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-            		  
-            		  WebDriver driver = new ChromeDriver();
-            		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-            		  
-            		  driver.get("https://itassetmanagement.in/travel_triangle/login");
-            		  driver.findElement(By.id("username")).click();
-            		  driver.findElement(By.id("username")).sendKeys("shadab");
-            		  
-            		  driver.findElement(By.id("password")).click();
-            		  driver.findElement(By.id("password")).sendKeys("2810");
-            		  driver.findElement(By.id("btnSubmit")).click();
-	
-
-		  
-		  //to check navigation panel if they are having proper modules //#mainnav-menu  all module
-		
-		  
-		  WebElement navigation = driver.findElement(By.cssSelector("#mainnav"));
-		  System.out.println(navigation.findElements(By.tagName("li")).size());
-		  
-		  driver.findElement(By.xpath("//a[text()='itassetmanagement.in']")).click();
-		  Set<String> ids=driver.getWindowHandles();Iterator<String> it=ids.iterator();
-		  
-		  
-		  
-		  String parent= it.next(); String child = it.next();
-		  
-		  
-		  driver.switchTo().window(child); System.out.println(driver.getTitle());
-		  System.out.println(driver.getCurrentUrl());
-		  
-		  driver.quit();
-                      }
-
-
-                    @Test
-                    public void LogoutTest()
-
-{
-                    	System.setProperty("webdriver.chrome.driver","src/main/resources/chromedriver.exe");
-              		  
-              		  WebDriver driver = new ChromeDriver();
-              		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-              		driver.get("https://itassetmanagement.in/travel_triangle/login");
-              		  
-              		driver.findElement(By.id("username")).click();
-          		  driver.findElement(By.id("username")).sendKeys("shadab");
-          		  
-          		  driver.findElement(By.id("password")).click();
-          		  driver.findElement(By.id("password")).sendKeys("2810");
-          		driver.findElement(By.id("btnSubmit")).click();
-          		  
-          		  driver.findElement(By.xpath("//i[@class='dropdown-caret dropdownicon']")).click();
-          		  driver.findElement(By.xpath("//div[@class='dropdown-menu dropdown-menu-md dropdown-menu-right panel-default']/ul/li[4]")).click();
-          		  
-          		
-          		
-          		String logouttext=driver.findElement(By.xpath("//span[text()='You have logged out successfully']")).getText();
-          		
-          		if(logouttext.contains("You have logged out successfully"))
-          		{
-          			System.out.println("Succesfully logout");
-          		}
-          		else
-          		{
-          			System.out.println("Logged failled");
-              		  
-              		  
-	
-}
-		 
-	
-          		driver.quit();
-		
-		
-		
-		
-	}
-
+	/*
+	 * @Test public void ItmLinkTest()
+	 * {System.setProperty("webdriver.chrome.driver",
+	 * "src/main/resources/chromedriver.exe");
+	 * 
+	 * WebDriver driver = new ChromeDriver();
+	 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	 * 
+	 * driver.get("https://itassetmanagement.in/travel_triangle/login");
+	 * driver.findElement(By.id("username")).click();
+	 * driver.findElement(By.id("username")).sendKeys("shadab");
+	 * 
+	 * driver.findElement(By.id("password")).click();
+	 * driver.findElement(By.id("password")).sendKeys("2810");
+	 * driver.findElement(By.id("btnSubmit")).click();
+	 * 
+	 * 
+	 * 
+	 * //to check navigation panel if they are having proper modules //#mainnav-menu
+	 * all module
+	 * 
+	 * 
+	 * WebElement navigation = driver.findElement(By.cssSelector("#mainnav"));
+	 * System.out.println(navigation.findElements(By.tagName("li")).size());
+	 * 
+	 * driver.findElement(By.xpath("//a[text()='itassetmanagement.in']")).click();
+	 * Set<String> ids=driver.getWindowHandles();Iterator<String> it=ids.iterator();
+	 * 
+	 * 
+	 * 
+	 * String parent= it.next(); String child = it.next();
+	 * 
+	 * 
+	 * driver.switchTo().window(child); System.out.println(driver.getTitle());
+	 * System.out.println(driver.getCurrentUrl());
+	 * 
+	 * driver.quit(); }
+	 * 
+	 * 
+	 * @Test public void LogoutTest()
+	 * 
+	 * { System.setProperty("webdriver.chrome.driver",
+	 * "src/main/resources/chromedriver.exe");
+	 * 
+	 * WebDriver driver = new ChromeDriver();
+	 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	 * driver.get("https://itassetmanagement.in/travel_triangle/login");
+	 * 
+	 * driver.findElement(By.id("username")).click();
+	 * driver.findElement(By.id("username")).sendKeys("shadab");
+	 * 
+	 * driver.findElement(By.id("password")).click();
+	 * driver.findElement(By.id("password")).sendKeys("2810");
+	 * driver.findElement(By.id("btnSubmit")).click();
+	 * 
+	 * driver.findElement(By.xpath("//i[@class='dropdown-caret dropdownicon']")).
+	 * click(); driver.findElement(By.
+	 * xpath("//div[@class='dropdown-menu dropdown-menu-md dropdown-menu-right panel-default']/ul/li[4]"
+	 * )).click();
+	 * 
+	 * 
+	 * 
+	 * String logouttext=driver.findElement(By.
+	 * xpath("//span[text()='You have logged out successfully']")).getText();
+	 * 
+	 * if(logouttext.contains("You have logged out successfully")) {
+	 * System.out.println("Succesfully logout"); } else {
+	 * System.out.println("Logged failled");
+	 * 
+	 * 
+	 * 
+	 * }
+	 * 
+	 * 
+	 * driver.quit();
+	 * 
+	 * 
+	 * 
+	 * 
+	 * }
+	 */
 }

@@ -11,47 +11,51 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class NegativeTest {
+public class NegativeTest extends LoginInherit {
 	@Test
 	public void negativetest()
 	{
+		LoginInherit l = new LoginInherit();
+		l.LoginTest();
 		//System.out.println("Negative");
 		
-		  System.setProperty("webdriver.chrome.driver",
-		  "src/main/resources/chromedriver.exe");
-		  
-		  WebDriver driver = new ChromeDriver();
-		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		  
-		  
-		  driver.get("https://itassetmanagement.in/travel_triangle/login");
-		  
-		  driver.manage().window().maximize();
-		  
-		  // to check the succesful login with correct password
-		  
-		  driver.findElement(By.id("username")).click();
-		  driver.findElement(By.id("username")).sendKeys("shadab");
-		  
-		  driver.findElement(By.id("password")).click();
-		  driver.findElement(By.id("password")).sendKeys("281a0");
-		  
-		  System.out.println(driver.findElement(By.xpath("//label[@for='remember_me']")
-		  ).isSelected());
-		  driver.findElement(By.xpath("//label[@for='remember_me']")).click();
-		  System.out.println(driver.findElement(By.xpath("//label[@for='remember_me']")
-		  ).isSelected());
-		  
-		  
-		  //to click to submit button
-		  
-		  driver.findElement(By.id("btnSubmit")).click();
+		/*
+		 * System.setProperty("webdriver.chrome.driver",
+		 * "src/main/resources/chromedriver.exe");
+		 * 
+		 * WebDriver driver = new ChromeDriver();
+		 * driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		 * 
+		 * 
+		 * driver.get("https://itassetmanagement.in/travel_triangle/login");
+		 * 
+		 * driver.manage().window().maximize();
+		 * 
+		 * // to check the succesful login with correct password
+		 * 
+		 * driver.findElement(By.id("username")).click();
+		 * driver.findElement(By.id("username")).sendKeys("shadab");
+		 * 
+		 * driver.findElement(By.id("password")).click();
+		 * driver.findElement(By.id("password")).sendKeys("281a0");
+		 * 
+		 * System.out.println(driver.findElement(By.xpath("//label[@for='remember_me']")
+		 * ).isSelected());
+		 * driver.findElement(By.xpath("//label[@for='remember_me']")).click();
+		 * System.out.println(driver.findElement(By.xpath("//label[@for='remember_me']")
+		 * ).isSelected());
+		 * 
+		 * 
+		 * //to click to submit button
+		 * 
+		 * driver.findElement(By.id("btnSubmit")).click();
+		 */
 		  
 		  
 		  
 		  //verfication
 		  
-		  
+		  WebDriver driver = new ChromeDriver();
 		  
 		  String successmessage=driver.findElement(By.xpath("//span[text()='Username and Password are invalid']")).getText();
 		  if(successmessage.contains("Username and Password are invalid"))
